@@ -1,0 +1,26 @@
+<div *ngFor="let pelicula of peliculas" class="building-block">
+    <div class="building-block-aspect">
+        <div class="building-block-padding">
+            <div class="building-block-wrapper">
+                <div class="image-wrapper">
+                    <div class="aspect">
+                        <a href={{pelicula.url}}> <img src={{pelicula.foto}} class="thumb reserved-ratio"> </a>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="bedazzlement"></div>
+                    <div class="content-bumper">
+                        <div class="content-info">
+                            <h3 class="title">
+                                <a href={{pelicula.url}}> <span class="long-title">{{pelicula.titulo}}</span> </a>
+                            </h3>
+                            <div class="desc-sizer">
+                                <p class="desc">{{pelicula.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

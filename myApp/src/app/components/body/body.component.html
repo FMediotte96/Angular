@@ -1,0 +1,37 @@
+<body>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-6">
+                <br>
+                <h1>*ngIf = "expression"</h1>
+                <br><br>
+                <div *ngIf="mostrar" class="container caja">
+                    <br>
+                    <h3>{{frase.mensaje}}</h3><br>
+                    <h5>{{frase.autor}}</h5>
+                </div>
+                <br>
+                <button (click)="mostrar = !mostrar " class="btn btn-lg btn-outline-success">Mostrar / Ocultar</button>
+            </div>
+            <div class="col-sm-6 text-center">
+                <br>
+                <h1>*ngFor="let item of items"</h1>
+                <br><br>
+                <ul class="w3-ul w3-card-4">
+                    <!-- <li class="w3-hover-red">Ironman</li>
+                    <li class="w3-hover-blue">Capitan America</li>
+                    <li class="w3-hover-green">Hulk</li>
+                    <li class="w3-hover-pink">Scarlet Witch</li>
+                    <li class="w3-hover-yellow">Thor</li>
+                    <li class="w3-hover-grey">Hawkeye</li> -->
+                    <li *ngFor="let personaje of personajes" class="w3-bar w3-hover-blue">
+                        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                        <div class="w3-bar-item">
+                            <span class="w3-large">{{personaje}}</span><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

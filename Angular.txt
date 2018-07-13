@@ -1,0 +1,48 @@
+pk
+C -> clases
+I -> interfaces
+Pk -> package
+D -> directivas
+k -> constantes
+f -> funciones
+e -> enums
+p -> pipe
+@ -> Annotations
+
+e2e -> sirve para pruebas unitarias
+node_modules -> modulos de node
+
+npm install -> parado en la raiz del proyecto, si no existe la carpeta node_modules la crea de nuevo
+
+src -> donde trabajamos nosotros
+
+.editorconfig -> configuración del editor
+
+angularjson -> le indica a la app como va a funcionar angular.
+
+package-lock.json -> git del package .json, a medida que hacemos cambios se va actualizando. Se puede llegar a
+			recurrir a este json por inconvenientes.
+
+package.json -> más importante en el proyecto, nunca eliminarlo.
+
+app.component.spec.ts -> pruebas automaticas de los componentes de mi aplicación
+
+app.module.ts -> es el que más vamos a modificar (manual o automatico)
+
+todo lo que sea estatico -> assets
+
+environment -> no la vamos a modificar, nos determina el ambiente de trabajo
+
+browserlists -> nos determina la version de los navegadores que aceptan este tipo de framework
+
+index.html -> mi archivo que va a apuntar a mi aplicación
+
+karma.conf.js -> arch de conf de javascript
+
+polyfills.ts -> compatibilidad con los navegadores anteriores. NO LO VAMOS A MODIFICAR
+
+tsconfig.app.json -> configuracion de la app 
+
+tsconfig.spec.json -> para los tests
+
+tslint.json -> nos determina como se van a mostrar los errores

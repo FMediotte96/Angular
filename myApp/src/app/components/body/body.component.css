@@ -1,0 +1,7 @@
+.caja {
+    background-color: cadetblue;
+    height: 150px;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+}

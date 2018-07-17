@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,9 +8,14 @@ import { RouterLinkActive } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  buscarHeroe( termino: string ) {
+    console.log(termino);
+    this.router.navigate(['/buscar', termino]);
   }
 
 }

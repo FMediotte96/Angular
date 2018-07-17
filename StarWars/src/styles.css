@@ -3,3 +3,7 @@
 a {
     text-decoration: none;
 }
+
+body {
+    background: url(assets/images/fondo2.jpg);
+}

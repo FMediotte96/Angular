@@ -1,0 +1,14 @@
+<div>
+    <div class="card h-100 separacion">
+        <img class="card-img-top" [src]="personaje.img" [alt]="personaje.nombre">
+        <div class="card-body caja">
+            <h4 class="card-title">
+                <a [routerLink]="['/personaje',index]">{{personaje.nombre}}</a>
+            </h4>
+            <p class="card-text">{{personaje.descripcion | slice:0:140 }}...</p>
+            <button (click)="verPersonaje(index)" type="button" class="btn btn-outline-secondary btn-block">
+                Ver más...
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="contenedor">
+    <h1>Personajes</h1><br>
+
+    <div class="row">
+        <app-personaje-tarjeta class="col-lg-3 col-md-4 col-sm-6" (personajeSeleccionado)="verPersonaje( $event )" [personaje]="personaje" [index]="i" *ngFor="let personaje of personajes; let i = index">
+
+        </app-personaje-tarjeta>
+    </div>
+</div>

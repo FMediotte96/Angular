@@ -7,28 +7,40 @@ export class PeliculasService {
 
   private peliculas:Pelicula[] = [
     {
+      titulo: "Star Wars: Episode I The Phantom Menace",
+      url: "https://www.starwars.com/films/star-wars-episode-i-the-phantom-menace",
+      descripcion: "Anakin Skywalker, a young slave strong with the Force, is discovered on Tatooine. Meanwhile, the evil Sith have returned, enacting their plot for revenge against the Jedi.",
+      foto:"/assets/images/films/episodioI.jpg"
+    },
+    {
+      titulo: "Star Wars: Episode II Attack of the Clones",
+      url: "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones",
+      descripcion: "Padawan Anakin Skywalker must choose between his Jedi duty and forbidden love, while Obi-Wan Kenobi uncovers a sinister plot that leads to war.",
+      foto:"/assets/images/films/episodioII.jpg"
+    },
+    {
       titulo: "Star Wars: Episode III Revenge of the Sith",
       url: "https://www.starwars.com/films/star-wars-episode-iii-revenge-of-the-sith",
       descripcion: "Faced with haunting premonitions that his secret wife, Padmé Amidala, will die, Anakin Skywalker is seduced by the dark side.",
-      foto:"/assets/images/episodioIII.jpg"
+      foto:"/assets/images/films/episodioIII.jpg"
     },
     {
       titulo: "Star Wars: Episode IV A New Hope",
       url: "https://www.starwars.com/films/star-wars-episode-iv-a-new-hope",
       descripcion: "Luke Skywalker begins a journey that will change the galaxy, as he leaves his home planet, battles the evil Empire, and learns the ways of the Force.",
-      foto:"/assets/images/episodioIV.jpg"
+      foto:"/assets/images/films/episodioIV.jpg"
     },
     {
       titulo: "Star Wars: Episode V The Empire Strikes Back",
       url: "https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back",
       descripcion: "After the destruction of the Death Star, the Empire has regrouped -- with Darth Vader leading the hunt for Luke Skywalker.",
-      foto:"/assets/images/episodioV.jpg"
+      foto:"/assets/images/films/episodioV.jpg"
     },
     {
       titulo: "Star Wars: Episode VI Return of the Jedi",
       url: "https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi",
       descripcion: "Luke Skywalker heads a mission to rescue Han Solo from the clutches of Jabba the Hutt, and faces Darth Vader one last time.",
-      foto:"/assets/images/episodioVI.jpg"
+      foto:"/assets/images/films/episodioVI.jpg"
     },
     {
       titulo: "Star Wars: Episode VII The Force Awakens",
@@ -60,13 +72,11 @@ export class PeliculasService {
       descripcion: "Board the Millennium Falcon and journey to a galaxy far, far away in Solo: A Star Wars Story, an all-new adventure with the most beloved scoundrel in the galaxy. Through a series of daring escapades deep within a dark and" +
       " dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian, in a journey that will set the course of one of the Star Wars saga’s most unlikely" +
       " heroes. Solo: A Star Wars Story releases in U.S. Theaters on May 25, 2018.",
-      foto: "/assets/images/solo.jpg"
+      foto: "/assets/images/films/solo.jpg"
     }
   ]
 
-  
-
-  getPeliculas(): Pelicula[]{
+  getPeliculas():Pelicula[]{
     return this.peliculas;
   }
 
@@ -77,8 +87,8 @@ export class PeliculasService {
 }
 
 export interface Pelicula {
-  titulo: string;
-  url: string;
-  descripcion: string;
-  foto: string;
+  titulo:string;
+  url:string;
+  descripcion:string;
+  foto:string;
 }

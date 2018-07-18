@@ -1,0 +1,33 @@
+.caja {
+    background-color: #222222;
+    color: white;
+    min-height: 236px;
+    max-height: 236px;
+}
+
+a {
+    text-decoration: none;
+    color: #DDAB37;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    min-height: 110px;
+    max-height: 110px;
+}
+
+img {
+    min-height: 160px;
+    max-height: 160px;
+}
+
+.separacion {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-bottom: 0px;
+}

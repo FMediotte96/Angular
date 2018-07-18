@@ -141,3 +141,12 @@ h3 a {
     padding: 0;
     text-decoration: none;
 }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.contenedor {
+    margin: 20px;
+}

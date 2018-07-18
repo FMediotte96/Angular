@@ -11,6 +11,7 @@ import { PeliculasService } from './servicios/peliculas.service';
 import { PersonajesComponent } from './components/personajes/personajes.component';
 import { PersonajeTarjetaComponent } from './components/personaje-tarjeta/personaje-tarjeta.component';
 import { PersonajesService } from './servicios/personajes.service';
+import { PeliculaTarjetaComponent } from './components/pelicula-tarjeta/pelicula-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PersonajesService } from './servicios/personajes.service';
     BodyComponent,
     PeliculasComponent,
     PersonajesComponent,
-    PersonajeTarjetaComponent
+    PersonajeTarjetaComponent,
+    PeliculaTarjetaComponent
   ],
   imports: [
     BrowserModule,

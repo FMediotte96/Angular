@@ -13,7 +13,7 @@ export class PersonajesService {
       "Anakin Skywalker tenía el potencial de convertirse en uno de los Jedi más poderosos de la historia, " +
       "y fue creído por algunos ser el Elegido que traería el equilibrio a la Fuerza. " +
       "Un héroe de las Guerras Clon, Anakin fue cariñoso y compasivo, pero también " +
-      "tenía miedo a la pérdida que resultaría ser su perdición"
+      "tenía miedo a la pérdida que resultaría ser su perdición."
     },
     {
       nombre: "Darth Vader",
@@ -51,7 +51,7 @@ export class PersonajesService {
       img: "/assets/images/characters/hanSolo.jpg",
       descripcion: "Han Solo resurgió de una infancia empobrecida en las mezquinas calles de Corellia para convertirse en uno de los héroes de la Alianza Rebelde. " + 
       "Como capitán del Halcón Milenario, Han y su copiloto Chewbacca llegaron a creer en la causa de la libertad galáctica, uniéndose a Luke Skywalker y la Princesa Leia Organa " + 
-      "en la lucha contra el Imperio. Después de la Batalla de Endor, Han se enfrentó a tiempos difíciles en una galaxia caótica, lo que llevó a una confrontación demoledora con su hijo Ben"
+      "en la lucha contra el Imperio. Después de la Batalla de Endor, Han se enfrentó a tiempos difíciles en una galaxia caótica, lo que llevó a una confrontación demoledora con su hijo Ben."
     },
     {
       nombre: "Chewbacca",
@@ -163,6 +163,10 @@ export class PersonajesService {
 
   getPersonajes():Personaje[]{
     return this.personajes;
+  }
+
+  getPersonaje(index:number):Personaje{
+    return this.personajes[index];
   }
 
   constructor() { }

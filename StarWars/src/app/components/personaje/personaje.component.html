@@ -1,0 +1,19 @@
+<div class="per">
+    <h1 class="animated fadein"> {{ personaje.nombre | uppercase }}</h1>
+
+    <div class="row animated fadeIn fast">
+
+        <div class="col-md-4">
+            <img [src]="personaje.img" class="img-fluid" [alt]="personaje.nombre">
+            <br><br>
+            <a [routerLink]="['/personajes']" class="btn btn-danger btn-block">Regresar</a>
+        </div>
+
+        <div class="col-md-8">
+            <h3> {{personaje.nombre}} </h3>
+            <hr>
+            <p> {{personaje.descripcion}} </p>
+        </div>
+
+    </div>
+</div>

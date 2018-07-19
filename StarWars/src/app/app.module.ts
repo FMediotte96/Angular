@@ -13,6 +13,7 @@ import { PersonajeTarjetaComponent } from './components/personaje-tarjeta/person
 import { PersonajesService } from './servicios/personajes.service';
 import { PeliculaTarjetaComponent } from './components/pelicula-tarjeta/pelicula-tarjeta.component';
 import { AboutComponent } from './components/about/about.component';
+import { PersonajeComponent } from './components/personaje/personaje.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './components/about/about.component';
     PersonajesComponent,
     PersonajeTarjetaComponent,
     PeliculaTarjetaComponent,
-    AboutComponent
+    AboutComponent,
+    PersonajeComponent
   ],
   imports: [
     BrowserModule,

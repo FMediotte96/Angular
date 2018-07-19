@@ -8,7 +8,7 @@
 #titles {
     position: absolute;
     width: 18em;
-    height: 30em;
+    height: 25em;
     bottom: 0;
     left: 50%;
     margin-left: -9em;
@@ -45,7 +45,7 @@
     right: 0;
     top: 0;
     bottom: 60%;
-    background-image: linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, transparent 100%);
     pointer-events: none;
 }
 

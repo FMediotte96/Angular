@@ -1,5 +1,39 @@
-.hcaja {
-    background-color: #e3b03840;
+.cent {
+    margin-right: 10px;
+}
+
+.more {
+    width: 100%;
+    height: auto;
+}
+
+.caja {
+    background-color: #222222;
     color: white;
-    margin: 20px;
+    height: auto;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #DDAB37;
+}
+
+h4 {
+    text-align: center;
+}
+
+.separacion {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-bottom: 0px;
+}
+
+.tam {
+    height: 280px;
 }

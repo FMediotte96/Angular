@@ -3,7 +3,7 @@
         <div class="building-block-wrapper">
             <div class="image-wrapper">
                 <div class="aspect">
-                    <a href={{pelicula.url}}> <img src={{pelicula.foto}} class="thumb reserved-ratio"> </a>
+                    <img src={{pelicula.foto}} class="thumb reserved-ratio">
                 </div>
             </div>
             <div class="content-wrapper">
@@ -11,7 +11,7 @@
                 <div class="content-bumper">
                     <div class="content-info">
                         <h3 class="title">
-                            <a href={{pelicula.url}}> <span class="long-title">{{pelicula.titulo}}</span> </a>
+                            <a [routerLink]="['/pelicula',index]"> <span class="long-title">{{pelicula.titulo}}</span> </a>
                         </h3>
                         <div class="desc-sizer">
                             <p class="desc">{{pelicula.descripcion}}</p>

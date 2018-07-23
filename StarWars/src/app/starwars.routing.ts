@@ -5,6 +5,7 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { PersonajesComponent } from './components/personajes/personajes.component';
 import { AboutComponent } from './components/about/about.component';
 import { PersonajeComponent } from './components/personaje/personaje.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
 const RUTAS: Routes = [
   { path:'body', component: BodyComponent },
@@ -12,6 +13,7 @@ const RUTAS: Routes = [
   { path: 'personajes', component: PersonajesComponent},
   { path: 'acercaDe', component: AboutComponent},
   { path: 'personaje/:id',component: PersonajeComponent},
+  { path: 'pelicula/:id',component: PeliculaComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'body' },
 ];
 

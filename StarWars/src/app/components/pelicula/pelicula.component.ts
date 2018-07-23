@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { Personaje, PersonajesService } from '../../servicios/personajes.service';
+import { Pelicula, PeliculasService } from '../../servicios/peliculas.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-personaje',
-  templateUrl: './personaje.component.html',
-  styleUrls: ['./personaje.component.css']
+  selector: 'app-pelicula',
+  templateUrl: './pelicula.component.html',
+  styleUrls: ['./pelicula.component.css']
 })
-export class PersonajeComponent implements OnInit {
+export class PeliculaComponent implements OnInit {
 
-  personaje:Personaje;
-
+  pelicula:Pelicula;
+  
   constructor(private activarRuta:ActivatedRoute,
-              private _personajesService:PersonajesService) {
+              private _peliculasService:PeliculasService) { 
+
     /* Esta funcion retornara un observador,un observador es como una promesa,
     es algo que esta pendiente de esos cambios.
     En parametros nos retorna los valores
     */
     this.activarRuta.params.subscribe( parametros => {
-      this.personaje = this._personajesService.getPersonaje( parametros['id']);
+      this.pelicula = this._peliculasService.getPelicula( parametros['id']);
     });
   }
 

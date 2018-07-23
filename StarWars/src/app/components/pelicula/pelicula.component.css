@@ -8,6 +8,10 @@ p {
 }
 
 img {
-    height: 350px;
+    height: 300px;
     width: 100%;
+}
+
+h3 {
+    font-size: 30px;
 }

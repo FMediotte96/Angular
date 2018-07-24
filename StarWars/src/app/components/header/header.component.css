@@ -129,3 +129,84 @@ li a p {
     padding: 0;
     font-size: 20px;
 }
+
+#nav-utility {
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding: 1.5%;
+    box-sizing: border-box;
+}
+
+#nav-search-container {
+    display: inline-block;
+    position: relative;
+    width: 240px;
+    margin: auto;
+    opacity: 1;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    min-width: 60px;
+    display: inline-block;
+    right: 0;
+    text-align: left;
+    height: 60px;
+    cursor: pointer;
+    top: 0;
+}
+
+.bedazzlement-container {
+    height: 44px;
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+    box-shadow: inset -1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #cacacabf;
+    border-radius: 15px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-search-container input {
+    display: block;
+    left: 4px;
+    width: 80%;
+    visibility: visible;
+    height: 80%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    padding-left: 12px;
+    color: #000;
+    line-height: 1.5em;
+    border: 0;
+    box-sizing: border-box;
+    font-family: DIN, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#nav-search-icon {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 50px;
+    height: 50px;
+    background-position: 100% 0;
+    background-image: url(https://static-mh.content.disney.io/starwars/assets/navigation/search_icon@2x-94cffb8a3976.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+input:focus {
+    outline: 0 none;
+}

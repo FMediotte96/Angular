@@ -1,1 +1,20 @@
-ng new primero
+Instalar Angular CLI: 
+	npm install -g @angular/cli
+
+Ayuda ng:
+	ng --help
+
+Crear el esqueleto de una aplicación Angular 2:
+	ng new nombre-proyecto
+
+Servir el proyecto desde un web server:
+	ng serve -> http://localhost:4200/
+
+para modificar el puerto si así se desea:
+	ng serve --port 4201(numero)
+
+Para lanzar el script start se escribe por consola:
+	ng start
+
+Para iniciar el servidor y que se levante el navegador directamente utilizamos:
+	ng serve --o

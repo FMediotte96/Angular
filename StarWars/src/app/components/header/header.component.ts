@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   buscarPersonaje(termino:string){
-    console.log("Estoy buscando" + termino);
     this.ruta.navigate(['/buscar', termino]);
+    setTimeout('document.formulario.reset()',0);
   }
 
 }

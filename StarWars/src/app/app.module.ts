@@ -15,6 +15,7 @@ import { PeliculaTarjetaComponent } from './components/pelicula-tarjeta/pelicula
 import { AboutComponent } from './components/about/about.component';
 import { PersonajeComponent } from './components/personaje/personaje.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     PeliculaTarjetaComponent,
     AboutComponent,
     PersonajeComponent,
-    PeliculaComponent
+    PeliculaComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,

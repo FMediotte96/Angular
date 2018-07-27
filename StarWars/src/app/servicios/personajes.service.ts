@@ -169,12 +169,28 @@ export class PersonajesService {
     return this.personajes[index];
   }
 
+  buscarPersonajes(termino:string):Personaje[]{
+    let personajesArr:Personaje[] = [];
+    termino = termino.toLowerCase();
+    for(let i = 0; i < this.personajes.length; i ++ ){
+      let personaje = this.personajes[i];
+      let nombre = personaje.nombre.toLowerCase();
+
+      if(nombre.indexOf(termino) >= 0){
+        personaje.idx = i;
+        personajesArr.push(personaje); 
+      }
+    }
+    return personajesArr;
+  }
+
   constructor() { }
   
 }
 
 
 export interface Personaje{
+  idx?:number;
   nombre:string;
   img:string;
   descripcion:string;

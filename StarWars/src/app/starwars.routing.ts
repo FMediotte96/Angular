@@ -6,6 +6,7 @@ import { PersonajesComponent } from './components/personajes/personajes.componen
 import { AboutComponent } from './components/about/about.component';
 import { PersonajeComponent } from './components/personaje/personaje.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 const RUTAS: Routes = [
   { path:'body', component: BodyComponent },
@@ -14,6 +15,7 @@ const RUTAS: Routes = [
   { path: 'acercaDe', component: AboutComponent},
   { path: 'personaje/:id',component: PersonajeComponent},
   { path: 'pelicula/:id',component: PeliculaComponent},
+  { path: 'buscar/:termino',component:BuscadorComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'body' },
 ];
 

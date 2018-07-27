@@ -5,13 +5,16 @@
         <a id="nav-sw-logo" routerLink="/body" itemprop="logo" data-cto="swlogo"></a>
         <div id="nav-utility">
             <div id="nav-search-container">
-                <div class="bedazzlement-container"><span class="bedazzlement"></span></div>
-<form id="topnav-search" class="nav-search top-nav" action="/search" method="GET">
+                <div class="bedazzlement-container">
+                    <span class="bedazzlement"></span>
+</div>
+<form id="topnav-search" class="nav-search top-nav" onsubmit="return false">
     <div class="query-field">
-        <input id="nav-search-input" name="q" type="text" placeholder="Buscar Star Wars" value="" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off">
+        <input id="nav-search-input" type="text" placeholder="Buscar Personaje" (keyup.enter)="buscarPersonaje(buscarTexto.value)" #buscarTexto>
+        <span id="nav-search-icon" (click)="buscarPersonaje(buscarTexto.value)"></span>
     </div>
 </form>
-<span id="nav-search-icon"></span>
+
 </div>
 </div>
 </div>

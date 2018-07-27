@@ -6,3 +6,9 @@ h1 {
     color: white;
     margin: 20px;
 }
+
+.error {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}

@@ -3,8 +3,8 @@
 
 <div class="row animated fadeIn fast" *ngIf="personajes.length == 0">
     <div class="col-md-12">
-        <div class="alert alert-info" role="alert">
-            No existen resultados con el termino: {{ termino | uppercase }}
+        <div class="error">
+            <p>No existen resultados con el termino: {{ termino | uppercase }}</p>
         </div>
     </div>
 </div>
